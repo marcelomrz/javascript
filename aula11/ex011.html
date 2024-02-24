@@ -15,7 +15,7 @@
 
     <script>
         function verificar() {
-            var txtv = window.document.querySelector('input#txtlu')
+            var txtv = window.document.querySelector('input#txtlu').value
             var res = window.document.querySelector('div#res')
             res.innerHTML = `<p>Sua moradia atual é no <strong>${txtv}!</strong></p>`
             if (txtv == 'Brasil') {
