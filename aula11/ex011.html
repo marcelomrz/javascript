@@ -15,10 +15,11 @@
 
     <script>
         function verificar() {
-            var txtv = window.document.querySelector('input#txtlu').value
+            var txtv = window.document.querySelector('input#txtlu')
             var res = window.document.querySelector('div#res')
-            res.innerHTML = `<p>Sua moradia atual é no <strong>${txtv}!</strong></p>`
-            if (txtv == 'Brasil') {
+            var va = (txtv.value)
+            res.innerHTML = `<p>Sua moradia atual é no <strong>${va}!</strong></p>`
+            if (va == 'Brasil') {
                 res.innerHTML += `<p>Você é <strong>Brasileiro(a)!</strong></p>`
             } else {
                 res.innerHTML += `<p>Você é <strong>Estrangeiro(a)!</strong></p>`
