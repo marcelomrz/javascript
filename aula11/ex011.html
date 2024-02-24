@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>O que eu sou?</h1>
+    Onde você mora: <input type="text" name="txtlu" id="txtlu">
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id ="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var txtv = window.document.querySelector('input#txtlu')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Sua moradia atual é no <strong>${txtv}!</strong></p>`
+            if (txtv == 'Brasil') {
+                res.innerHTML += `<p>Você é <strong>Brasileiro(a)!</strong></p>`
+            } else {
+                res.innerHTML += `<p>Você é <strong>Estrangeiro(a)!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
